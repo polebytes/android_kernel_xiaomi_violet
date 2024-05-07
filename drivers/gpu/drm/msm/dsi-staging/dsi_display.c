@@ -198,8 +198,8 @@ int dsi_display_set_backlight(struct drm_connector *connector,
 	u32 bl_scale, bl_scale_ad;
 	u64 bl_temp;
 	int rc = 0;
-	float bl_dcycle_level;
-	float bl_dcycle = 0.7;
+	unsigned int bl_dcycle_level;
+	unsigned int bl_dcycle = 0.7;
 
 	if (dsi_display == NULL || dsi_display->panel == NULL)
 		return -EINVAL;
